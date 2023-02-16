@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
 
 export const FooterBottom = styled.div`
   background-color: radial-gradient(to top, rgba(242, 244, 245, 1), rgba(242, 244, 245, .1)); // #f2f4f5;
