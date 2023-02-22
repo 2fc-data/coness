@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { getTopNav } from '../Data/MainNav.data';
-import * as Styled from './MainNav.styles';
+import * as Styled from './MainNav.styles_old';
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 
 function MainNav() {

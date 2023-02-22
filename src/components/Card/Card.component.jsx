@@ -1,5 +1,7 @@
 // import React, { useState, useEffect } from 'react'
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
+
 import Button from '../Button';
 import { getEmprNavMmt } from '../Data/EmprNavMmt.data';
 import { getEmprNavMe } from '../Data/EmprNavMe.data';
@@ -46,7 +48,7 @@ function Card({ openEmpreendimentos }) {
           <div className='content__local'>Poços de Caldas - MG</div>
           {navItemsMmt.map((item) => (
               <Button key={item.id}>
-                <a href={item.href} className='nav__link'>{item.label}</a>
+                <Link to={item.href} className='nav__link'>{item.label}</Link>
               </Button>
             ))
           }
@@ -68,7 +70,7 @@ function Card({ openEmpreendimentos }) {
           <div className='content__local'>São João da Boa Vista - SP</div>
           {navItemsMe.map((item) => (
             <Button key={item.id}>
-              <a href={item.href} className='nav__link'>{item.label}</a>
+              <Link to={item.href} className='nav__link'>{item.label}</Link>
             </Button>
           ))
         }
@@ -90,7 +92,7 @@ function Card({ openEmpreendimentos }) {
           <div className='content__local'>Poços de Caldas - MG</div>
           {navItemsRcr.map((item) => (
               <Button key={item.id}>
-                <a href={item.href} className='nav__link'>{item.label}</a>
+                <Link to={item.href} className='nav__link'>{item.label}</Link>
               </Button>
             ))
           }
@@ -111,7 +113,7 @@ function Card({ openEmpreendimentos }) {
           <div className='content__local'>MAHWAH – New Jersey - EUA</div>
           {navItemsMD.map((item) => (
               <Button key={item.id}>
-                <a href={item.href} className='nav__link'>{item.label}</a>
+                <Link to={item.href} className='nav__link'>{item.label}</Link>
               </Button>
             ))
           }
@@ -123,12 +125,5 @@ function Card({ openEmpreendimentos }) {
 }
 
 export default Card;
-
-// navItems.map((item) => (
-//   <li key={item.id} className='nav__item'>
-//     <a href={item.href} className='nav__link'>{item.label}</a>
-//   </li>
-//   ))}
-
 
 // https://www.terabox.com/sharing/link?surl=IH3bIeZJTFUT-6RAzhqLEw&path=%2Fess_vds

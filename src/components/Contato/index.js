@@ -1,1 +1,3 @@
-export { default } from './Contato.component';
+export { default } from './Contato.component.jsx';
+
+

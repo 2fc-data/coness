@@ -1,2 +1,3 @@
-export { default } from './MansaoDarlington.component.js';
+export { default } from './MansaoDarlington.component';
+
 

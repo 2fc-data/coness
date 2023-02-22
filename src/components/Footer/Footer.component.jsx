@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { getTopNav } from '../Data/MainNav.data';
 import { getNavEmprLancamentos } from '../Data/EmprLancamentos.data';
 import { getNavEmprFuturos } from '../Data/EmprFuturos.data';
@@ -42,7 +43,7 @@ function Footer() {
             {navEmprLancamentos.map((item) => (
               <li key={item.id}>
                 <nav>
-                  <a href={item.href} className='content__links'>{item.label}</a>
+                  <Link to={item.href} className='content__links'>{item.label}</Link>
                 </nav>
               </li>
               ))
@@ -57,7 +58,7 @@ function Footer() {
             {navEmprFuturosLancamentos.map((item) => (
               <li key={item.id}>
                 <nav>
-                  <a href={item.href} className='content__links'>{item.label}</a>
+                  <Link to={item.href} className='content__links'>{item.label}</Link>
                 </nav>
               </li>
               ))
@@ -72,7 +73,7 @@ function Footer() {
             {navEmprRealizados.map((item) => (
               <li key={item.id}>
                 <nav>
-                  <a href={item.href} className='content__links'>{item.label}</a>
+                  <Link to={item.href} className='content__links'>{item.label}</Link>
                 </nav>
               </li>
               ))
@@ -151,7 +152,7 @@ function Footer() {
             {navItems.map((item) => (
               <li key={item.id}>
                 <nav>
-                  <a href={item.href} className='content__links'>{item.label}</a>
+                  <Link to={item.href} className='content__links'>{item.label}</Link>
                 </nav>
               </li>
             ))}
