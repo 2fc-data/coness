@@ -86,7 +86,7 @@ export const MainNav = styled.div`
       top: 166px;
       transform: translateX(0%);
       transition: 0.3s ease-in-out;
-      width: 50%;   
+      width: 100%;   
       
       @media(max-width: 768px) {
         top: 116px;
