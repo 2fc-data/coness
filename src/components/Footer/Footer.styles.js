@@ -11,18 +11,20 @@ export const Footer = styled.div`
     font-size: 15px;
     font-weight: 400;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;    
     width: 100%;
 
     @media(max-width: 768px) {
       flex-direction: column;
       text-align: center;
-      width: 80%;
+      width: 100%;
     }
 
     .content {
       display: flex;
       flex-direction: column;
+      
       margin: 30px 5px;
       min-width: 234px;
 
@@ -71,11 +73,17 @@ export const Footer = styled.div`
       &__inline {
         display: flex;
         flex-direction: row;
-        padding: 3px;
+        padding-left: 12px;
+
+        &:hover {
+          background: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+          color: #fff;
+        }
 
         @media(max-width: 768px) {
           justify-content: center;
         }
+
       }
       
 
@@ -90,6 +98,7 @@ export const Footer = styled.div`
 
 
     nav {
+      border: 0px solid blue;
       display: flex;
       flex-direction: column;
 
@@ -97,16 +106,27 @@ export const Footer = styled.div`
         padding: 6px;
       }
 
+      ul {
+        text-decoration: none;
+        list-style: none;
+      }
+
+      li {
+        line-height: 1.5rem;
+        margin-left: -30px;
+
+
+        &:hover {
+          background: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+          color: #fff;
+        }
+      }
+
       a {
         border-radius: 3px;
         color: #ccc;
         text-decoration: none;
         font-size: 14px;
-        line-height: 9px;
-        margin: 6px 0px;
-        /* min-width: 170px; */
-        padding: 3px 0;
-        
 
         @media(max-width: 768) {
           margin: 0px 0;
@@ -115,12 +135,10 @@ export const Footer = styled.div`
         &:last-child {
           margin-bottom: 0;
         }
-        
-        &:hover {
-          background: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
-          color: #fff;
-        }
+
       }
+
+
 
     }
   }
