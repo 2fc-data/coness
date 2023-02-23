@@ -45,8 +45,8 @@ export const MainNav = styled.div`
       align-items: center;
       background: rgba(22, 74, 115, .9);
       border-radius: 5rem;
-      height: 0.41rem;
-      margin: 0.41rem;
+      height: 0.39rem;
+      margin: 0.39rem;
       transition: 0.21s ease-in-out;
       width: 3rem;
     }
@@ -81,12 +81,12 @@ export const MainNav = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 45vh;
+      height: 75vh;
       position: absolute;
       top: 166px;
       transform: translateX(0%);
       transition: 0.3s ease-in-out;
-      width: 100%;   
+      width: 50%;   
       
       @media(max-width: 768px) {
         top: 116px;
@@ -182,3 +182,4 @@ export const Logo = styled((props) => {
     width: 133px;
   }
 `;
+

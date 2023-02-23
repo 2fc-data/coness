@@ -7,26 +7,6 @@ export const Contato = styled.div`
   padding: 0;
   width: 100vw;
 
-  .inner-wrapper {  
-    align-items: center;
-    color: #111;
-    display: flex;
-    font-family: 'Prosto One', cursive, sans-serif;
-    justify-content: space-around;
-    margin: 30px 0;
-    padding: 30px 0;
-
-    p {
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
   .header {
     align-items: center;
     color: rgba(22, 74, 115, 1); 
@@ -43,6 +23,27 @@ export const Contato = styled.div`
     @media (max-width: 768px) {
       margin-top: 15px;
       padding-left: 5%;
+    }
+  }
+
+  .inner-wrapper {  
+    align-items: center;
+    color: #111;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Prosto One', cursive, sans-serif;
+    justify-content: space-around;
+    margin: 30px 0;
+    padding: 30px 0;
+
+    p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
     }
   }
 
