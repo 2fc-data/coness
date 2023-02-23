@@ -18,4 +18,3 @@ export const Home = () => {
     </Styled.Home>
   )
 }
-

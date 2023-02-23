@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getTopNav } from '../Data/MainNav.data';
-import * as Styled from './MainNav.styles_old';
+import * as Styled from './MainNav.styles';
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 
 function MainNav() {
@@ -39,7 +39,7 @@ function MainNav() {
         <ul className={active}>
           {navItems.map((item) => (
             <li key={item.id} className='nav__item'>
-              <a href={item.href} className='nav__link'>{item.label}</a>
+              <Link to={item.href} className='nav__link'>{item.label}</Link>
             </li>
             ))}
         </ul>

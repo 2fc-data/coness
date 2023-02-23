@@ -3,39 +3,40 @@ import styled from "styled-components";
 export const Card = styled.div` // .container
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  justify-content: space-around;
+  justify-content: center;
   padding: 15px;
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
 
   .card {
-    border: 0px solid blue;
     background: linear-gradient(transparent, rgba(22, 74, 115, .9));
     border-radius: 6px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    height: 441px;
+    justify-content: center;
+    height: 450px;
     margin: 30px 15px;
     padding: 15px;
     position: relative;
     transition: 0.3s ease-in-out;
     transition-delay: 0.3s;
-    max-width: 330px;
+    width: 330px;
 
     @media (max-width: 768px) {
       margin: 30px 15px;
     }
 
     &:hover {
-      height: 441px;
+      height: 480px;
       background: linear-gradient(rgba(22, 74, 115, .9), rgba(22, 74, 115, .9));
 
       @media (max-width: 768px) {
@@ -43,7 +44,7 @@ export const Card = styled.div` // .container
       }
       
       .content {
-        margin-top: -54px;
+        margin-top: -60px;
         opacity: 1;
         transition: 0.3s ease-in-out;
         transition-delay: 0.3s;
@@ -72,14 +73,14 @@ export const Card = styled.div` // .container
     }
 
     .imgBox {
-      align-items: center;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+      
+      display: flex;
       height: 260px;
+      justify-content: center;
       position: relative;
       top: -45px;
       transition: 0.3s ease-in-out;
       transition-delay: 0.3s;
-      width: 260px;
       z-index: 1;
       
       &__image {

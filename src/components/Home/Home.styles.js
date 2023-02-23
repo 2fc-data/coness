@@ -8,7 +8,6 @@ export const Home = styled.div`
   width: 100vw;
   z-index: 9;
 
-  
   @media (max-width: 768px) {
     height: auto;
   }
