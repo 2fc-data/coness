@@ -6,17 +6,17 @@ import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 
 function MainNav() {
 
-  const [navItems, setNavItems] = useState([]);
+  const [navItems, setNavItems] = useState([0]);
   useEffect(() => {
     setNavItems(getTopNav());
-  }, [])
+  }, [0])
 
   const [active, setActive] = useState('nav__active');
   const [toggleIcon, setToggleIcon] = useState('nav__toggler');
 
   const navToggle = () => {
     active === 'nav__active' 
-      ? setActive('nav__menu') 
+      ? setActive('nav__menu ') 
       : setActive('nav__active') 
 
     toggleIcon === 'nav__toggler' 
@@ -39,7 +39,7 @@ function MainNav() {
         <ul className={active}>
           {navItems.map((item) => (
             <li key={item.id} className='nav__item'>
-              <Link to={item.href} className='nav__link'>{item.label}</Link>
+              <Link to={item.href} onClick={navToggle} className='nav__link'>{item.label}</Link>
             </li>
             ))}
         </ul>
@@ -77,4 +77,3 @@ function MainNav() {
 }
 
 export default MainNav;
-

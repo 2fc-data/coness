@@ -182,4 +182,3 @@ export const Logo = styled((props) => {
     width: 133px;
   }
 `;
-
