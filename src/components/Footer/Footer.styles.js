@@ -113,7 +113,7 @@ export const Footer = styled.div`
 
       li {
         line-height: 1.5rem;
-        margin-left: -30px;
+        margin-left: 6px;
 
 
         &:hover {

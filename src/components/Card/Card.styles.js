@@ -23,8 +23,8 @@ export const Card = styled.div` // .container
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
-    margin: 30px 15px;
+    height: 460px;
+    margin: 45px 15px;
     padding: 15px;
     position: relative;
     transition: 0.3s ease-in-out;
@@ -36,7 +36,7 @@ export const Card = styled.div` // .container
     }
 
     &:hover {
-      height: 480px;
+      height: 460px;
       background: linear-gradient(rgba(22, 74, 115, .9), rgba(22, 74, 115, .9));
 
       @media (max-width: 768px) {

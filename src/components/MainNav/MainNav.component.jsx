@@ -47,9 +47,9 @@ function MainNav() {
 
 
       <div className='inner-wrapper'>
-        <a href="http://www.construtoraessencial.com.br"> 
+        <Link to="/"> 
           <Styled.Logo alt="Essencial - Construtora e Incorporadora"/>
-        </a>
+        </Link>
       </div>
 
       <div className='inner-wrapper'>
@@ -77,3 +77,4 @@ function MainNav() {
 }
 
 export default MainNav;
+

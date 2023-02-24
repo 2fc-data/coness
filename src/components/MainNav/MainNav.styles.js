@@ -65,13 +65,13 @@ export const MainNav = styled.div`
 
     /* Toggler Icon Animation */
     .toggle .line1 {
-      transform: translate(-5px, 7px) rotate(-45deg);
+      transform: rotate(45deg) translate(0.1em, 0.5em) ;
     }
     .toggle .line2 {
       opacity: 0;
     }
     .toggle .line3 {
-      transform: translate(-5px, -7px) rotate(45deg); */
+      transform: rotate(-45deg) translate(0.1em, -0.5em) ;
     }
 
     .nav__menu {
