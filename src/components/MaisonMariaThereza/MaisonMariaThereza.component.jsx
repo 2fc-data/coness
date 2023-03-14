@@ -58,7 +58,7 @@ const MaisonMariaThereza = () => {
 
       <div className='inner-wrapper'>
         <div className='boxText'>
-          <div className='subTitulo'>Viva a experiência de viver com qualidade de vida.</div>
+          <div className='subTitulo'>Viva a experiência de viver com qualidade de vida</div>
         </div>
 
         <div className='boxImg'>
@@ -84,12 +84,12 @@ const MaisonMariaThereza = () => {
         <div className='boxText'>
           <div className='descricao'>
             <ul>
-              <li>Roof Top copleto com mirante</li>
-              <li>Pele de vidros bronze refletivos</li>
-              <li>Hydros Jacuzzi com água quente</li>
-              <li>Todas as suítes com varandas</li>
-              <li>Varanda gourmet com churrasqueira Portas balcão e persianas automatizadas Medidores individuais de água e luz Elevador de última geração</li>
-              <li>Estação de recarga para veículos elétricos Torre priorizando vista e posição solar Tomadas USB nos dormitórios</li>
+              <li>Roof Top copleto com mirante.</li>
+              <li>Pele de vidros bronze refletivos.</li>
+              <li>Hydros Jacuzzi com água quente.</li>
+              <li>Todas as suítes com varandas.</li>
+              <li>Varanda gourmet com churrasqueira Portas balcão e persianas automatizadas, medidores individuais de água e luz, elevador de última geração.</li>
+              <li>Estação de recarga para veículos elétricos, torre priorizando vista e posição solar, tomadas USB nos dormitórios.</li>
             </ul>
           </div>
         </div>
