@@ -138,7 +138,8 @@ function Footer() {
               <BsFillGeoAltFill />
                 <a href='https://www.google.com/maps/place/Praça+Pedro+Sanches,+145+-+Centro,+Poços+de+Caldas+-+MG,+37701-004/@-21.7870639,-46.5699273,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9dceec163fd17:0x86ed526ccaa5e900!8m2!3d-21.7870639!4d-46.5677386'
                   target="_blank" rel="noopener noreferrer">
-                    <p className='content__endereco'>Praça pedro Sanches, 145 - Centro</p>
+                    <p className='content__endereco'>Praça pedro Sanches, 145 - Centro, Sala 26</p>
+                    <p className='content__endereco'>Poços de Caldas - MG</p>
                 </a>
             </div>
           </nav>

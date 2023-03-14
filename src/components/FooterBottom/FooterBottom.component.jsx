@@ -8,7 +8,7 @@ const FooterBottom = () => {
     <Styled.FooterBottom>
     
       <div className='inner-wrapper'>
-        <div className='navbarLink'>Todos os Direitos Reservados &#0174; {currentYear}</div>          
+        <div className='navbarLink'>Todos os Direitos Reservados &#0174; 2021</div>          
       </div>
 
       <div className='inner-wrapper'>
@@ -19,12 +19,6 @@ const FooterBottom = () => {
         <div className='navbarLink'>creci: 41395</div>
       </div>
 
-      <div className='inner-wrapper'>
-        <div className='navbarLink'>
-          <a href='https://www.2fc.dev.br' target='_new' className='nav__link'>by: 2fc.data</a>
-        </div>
-      </div>
-
     </Styled.FooterBottom>
   )
 
@@ -32,3 +26,10 @@ const FooterBottom = () => {
 
 export default FooterBottom;
 // Copyright &#169;
+// {currentYear}
+
+// <div className='inner-wrapper'>
+//         <div className='navbarLink'>
+//           <a href='https://www.2fc.dev.br' target='_new' className='nav__link'>by: 2fc.data</a>
+//         </div>
+//       </div>
