@@ -1,45 +1,23 @@
 import styled from "styled-components";
 
 export const ResidencialCarmoRibeiro = styled.div`
-  text-align: center;
-  width: 100vw;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 
-  img{
-    border: thick double rgba(206, 203, 191, .9);
-    border-radius: 3px;
-  }
-
-  .hero {
-    align-items: center;
-    border-bottom: 0px solid #999;
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 15px;
-    padding: 15px;
-
-    @media (max-width: 768px) {
-      flex-direction: column ;
-    }
-  } 
-  
   .inner-wrapper {
-    align-items: center;
-    color: #111;
-    display: flex;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    justify-content: space-around;
-    margin: 15px 0;
-    width: 100%;
-    padding: 45px 30px;
-
-    .hero{
-      border-bottom: 1px solid #999;
+      
+    .content {
+      border: 0px dashed black;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 45px 0px;
+      padding: 0 15px;
+      width: 100vw;
 
       @media (max-width: 768px) {
-        margin: 0;
-        width: 100vw;
+        flex-direction: column;
       }
     }
 
@@ -48,84 +26,122 @@ export const ResidencialCarmoRibeiro = styled.div`
       padding-bottom: 30px;
     }
 
-    @media (max-width: 768px) {
-      flex-direction: column ;
-      padding: 15px;
-    }
-  }
-
-  .navbarLink {
-    color: #111;
-    padding: 3px 9px;
-  }
-
-  .boxImg {
-    text-align: center;
-    width: 50vw;
-
-    @media (max-width: 768px) {
-      padding: 0 10px;
-      text-align: center;
-    }
-  }
-
-  .boxText {
-    padding: 30px 5px;
-    text-align: justify;
-    width: 50vw;
-
-    @media (max-width: 768px) {
-      padding: 0 10px;
-      margin: 45px 5px;
+    img {
+      border: thick double rgba(74, 71, 67, .9);
+      border-radius: 3px;
+      height: 87%;
       width: 100%;
     }
-  }
 
-  @media (max-width: 768px) {
-    flex-direction: column ;
-  }
+    .navbarLink {
+      color: #111;
+      padding: 3px 9px;
+    }
 
-  .titulo {
-    background: linear-gradient(rgba(206, 203, 191, .3), rgba(206, 203, 191, .9));
-    border-radius: 1px 100px / 120px;
-    color: black;
-    font-family: 'Dancing Script';
-    font-size: 2.1rem;
-    font-weight: 600;
-    padding: 15px;
-    text-align: center;
+    .boxImg {
+      align-items: center;
+      border: 0px solid red;
+      height: auto;
+      margin: 0 15px;
+      text-align: center;
+      width: 45vw;
 
-    @media (max-width: 768px) {
+      &__tipologia {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    .boxText {
+      background: linear-gradient(rgba(74, 71, 67, .01), rgba(74, 71, 67, .1));
+      border: 0px solid blue;
+      display: flex;
+      height: 360px;
+      justify-content: center;
+      line-height: 2.5;
+      margin: 0px 15px;
+      padding: 0px 30px;
+      width: 45vw;
+
+      @media (max-width: 768px) {
+        padding: 0 10px;
+        margin: 45px 5px;
+        width: 100vw;
+      }
+    }
+
+    .titulo {
+      align-items: center;
+      background: linear-gradient(rgba(74, 71, 67, .3), rgba(74, 71, 67, .9));
+      border-radius: 1px 100px / 120px;
+      color: rgba(74, 71, 67, .);
+      font-family: 'Dancing Script';
+      font-size: 3rem;
+      padding: 21px;
+      text-align: center;
+      width: 45vw;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .subTitulo {
       font-size: 1.2rem;
-    }
-  }
-
-  .subTitulo {
-    background: linear-gradient(transparent, rgba(206, 203, 191, .06));
-    height: 100%;
-    font-size: 1.2rem;
-    padding: 15px 30px;
-    text-align: center;
-    
-    @media (max-width: 768px) {
-      font-size: 1rem;
-    }
-  }
-
-  .descricao {
-    align-items: center;
-    background: linear-gradient(transparent, rgba(22, 74, 115, .06));
-    border-radius: 6px;
-    font-size: 1rem;
-    line-height: 1.8;
-    padding: 30px;
-
-    @media (max-width: 768px) {
-      font-size: .8rem;
+      padding: 15px 30px;
+      text-align: center;
+      
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
 
-    li {
-      list-style: square;
+    .descricao {
+      align-items: center;
+      border-radius: 6px;
+      color: rgba(74, 71, 67, .9);
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: center;
+      line-height: 1.2;
+      padding: 5px 30px;
+      text-align: justify;
+
+      @media (max-width: 768px) {
+        font-size: .8rem;
+      }
+
+      li {
+        list-style: square;
+      }
+    }
+
+    .box_pavimento {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 5px 0;
+      text-align: justify;
+      width: 50%;
+
+      @media (max-width: 768px) {
+        margin: 15px 0;        
+      }
+    }
+
+    .subTitulo_pavimento {
+      padding: 5px;
+      text-align: center;
+    }
+
+    .descricao_pavimento {
+      align-items: center;
+      display: flex;
+      justify-content: center;
     }
   }
 `;
