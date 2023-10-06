@@ -7,6 +7,7 @@ import Contato from './components/Contato';
 import Empreendimentos from './components/Empreendimentos';
 import MaisonMariaThereza from './components/MaisonMariaThereza';
 import MaisonEsperance from './components/MaisonEsperance';
+import ResidencialVittoriale from './components/ResidencialVittoriale';
 import ResidencialCarmoRibeiro from './components/ResidencialCarmoRibeiro';
 import MansaoDarlington from './components/MansaoDarlington';
 import Sobre from './components/Sobre';
@@ -19,6 +20,7 @@ const App = () => {
       <Route path="/empreendimentos" element={<Empreendimentos />} />
       <Route path="/maisonmariathereza" element={<MaisonMariaThereza />} />
       <Route path="/maisonesperance" element={<MaisonEsperance />} />
+      <Route path="/residencialvittoriale" element={<ResidencialVittoriale />} />
       <Route path="/residencialcarmoribeiro" element={<ResidencialCarmoRibeiro />} />
       <Route path="/mansaoDarlington" element={<MansaoDarlington />} />
       <Route path="/sobre" element={<Sobre />} />

@@ -77,6 +77,7 @@ export const MaisonEsperance = styled.div`
 
     @media (max-width: 768px) {
       padding: 0 10px;
+      height: auto;
       margin: 45px 5px;
       width: 100%;
     }

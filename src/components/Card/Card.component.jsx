@@ -7,6 +7,7 @@ import { getEmprNavMmt } from '../Data/EmprNavMmt.data';
 import { getEmprNavMe } from '../Data/EmprNavMe.data';
 import { getEmprNavRcr } from '../Data/EmprNavRcr.data';
 import { getEmprNavMD } from '../Data/EmprNavMD.data';
+import { getEmprNavRVT } from '../Data/EmprNavRVT.data';
 import * as Styled from './Card.styles';
 
 function Card({ openEmpreendimentos }) {
@@ -29,6 +30,11 @@ function Card({ openEmpreendimentos }) {
   const [navItemsMD, setNavItemsMD] = useState([]);
   useEffect(() => {
     setNavItemsMD(getEmprNavMD());
+  }, [])
+
+  const [navItemsRVT, setNavItemsRVT] = useState([]);
+  useEffect(() => {
+    setNavItemsRVT(getEmprNavRVT());
   }, [])
 
   return (
@@ -120,6 +126,26 @@ function Card({ openEmpreendimentos }) {
         </div>  
       </div>
       
+      <div className='card'>
+        <div className='imgBox'>
+          <img className='imgBox__image' src='./images/empreendimentos/empreend_RV.jpg' alt='' />
+        </div>
+
+        <div className='tipo'>REALIZADO</div>
+        <div className='tipo__comentario'>Entregue em 2023</div>
+
+        <div className='content'>
+          <div className='content__tittle'>Residencial Vittoriale</div>
+          <div className='content__description'>3 Andares</div>
+          <div className='content__local'>Jardim Vitória / Poços de Caldas - MG</div>
+          {navItemsRVT.map((item) => (
+              <Button key={item.id}>
+                <Link to={item.href} className='nav__link'>{item.label}</Link>
+              </Button>
+            ))
+          }
+        </div>  
+      </div>
     </Styled.Card>
   )
 }
